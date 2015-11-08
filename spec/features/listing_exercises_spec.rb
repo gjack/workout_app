@@ -7,10 +7,10 @@ RSpec.feature 'Listing Exercises' do
     
     @e1 = @john.exercises.create(duration_in_min: 20,
                                  workout: "Body building routine",
-                                 workout_date: '2015-11-05')
+                                 workout_date: Date.today)
     @e2 = @john.exercises.create(duration_in_min: 20,
                                  workout: "Cardio",
-                                 workout_date: '2015-11-06')
+                                 workout_date: Date.today)
   end
   
   scenario 'show users workout for last seven days' do
